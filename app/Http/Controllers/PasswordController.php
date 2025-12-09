@@ -45,6 +45,15 @@ class PasswordController extends Controller
             $attempts++;
         } while ($exists && $attempts < $maxAttempts);
 
+        if ($exists){
+            return view('password.index', [
+                'password' => null,
+                'length' => $length,
+                'numbers' => $useNumbers,
+                'big_letters' => $useBigLetters,
+                'small_letters' => $useSmallLetters,
+            ]);
+        }
         Password::create(['value' => $password]);
 
         return view('password.index', [
