@@ -70,7 +70,7 @@
         @csrf
         <fieldset class="options-box">
             <legend>Password details</legend>
-            <label>Lenght of the password:<label>
+            <label>Lenght of the password<label>
             <input type="number" name="length" value="{{ $length ?? 8 }}" min="1" max="128">
             <label>
                 <input type="checkbox" name="numbers" {{ ($numbers ?? true) ? 'checked' : '' }}> Numbers
