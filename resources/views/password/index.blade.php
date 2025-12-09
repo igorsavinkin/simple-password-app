@@ -66,7 +66,7 @@
     </style>
 </head>
 <body><h2>A Simple Password Generator</h2>
-    <form action="/generate" method="POST">
+    <form action="/" method="POST">
         @csrf
         <fieldset class="options-box">
             <legend>Password details</legend>
