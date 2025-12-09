@@ -21,14 +21,15 @@ class PasswordController extends Controller
 
         $characters = '';
         $set_characters = [];
-        if ($useNumbers) {
-            $set_characters[] = '0123456789';
-        }
+        
         if ($useBigLetters) {
             $set_characters[] = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         }
         if ($useSmallLetters) {
             $set_characters[] = 'abcdefghijklmnopqrstuvwxyz';
+        }
+        if ($useNumbers) {
+            $set_characters[] = '0123456789';
         }
 
         if (empty($set_characters)) {
