@@ -69,11 +69,7 @@ A lightweight Laravel-based web application for generating secure, unique passwo
 
 ## How It Works
 
-The password generator uses a balanced algorithm that ensures each selected character set is represented evenly (at least once as much as password langht allows) throughout the password. For example, with all three options selected and a length of 9:
-
-- Positions 1, 4, 7 → Numbers
-- Positions 2, 5, 8 → Uppercase
-- Positions 3, 6, 9 → Lowercase
+The password generator uses a balanced algorithm that ensures each selected character set is represented evenly. This accomodates each set of characters be present at least once in a generated password (as much as password lenght allows).
 
 ### Uniqueness Check
 
@@ -108,3 +104,7 @@ Before saving, each generated password is checked against the database. If a dup
 ## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Author
+
+Igor Savinkin, [Webscraping.pro](https://webscraping.pro)
