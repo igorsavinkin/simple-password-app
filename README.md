@@ -158,7 +158,7 @@ Before saving, each generated password is checked against the database. If a dup
 | Method | URI | Description |
 |--------|-----|-------------|
 | GET | `/` | Display the password generator form |
-| POST | `/generate` | Generate a new password |
+| POST | `/` | Generate a new password |
 
 ## License
 
