@@ -9,7 +9,7 @@ class PasswordController extends Controller
 {
     public function index()
     {
-        return view('password.index');
+        return view('password.index',  ['password' =>'   ']);
     }
 
     public function generate(Request $request)

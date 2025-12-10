@@ -88,7 +88,6 @@
 
     @isset($password)
         <div class="password-display">{{ $password }}</div>
-        <div class="success-message">{{ $success_message ?? 'Password generated!' }}</div>
     @else
         <div class="error-message">{{ $error_message ?? 'Error generating password! Change the password details and try again. Possible duplicate password already exists in the database.' }}</div>
     @endisset
