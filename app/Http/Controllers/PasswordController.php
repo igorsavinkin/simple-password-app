@@ -74,6 +74,7 @@ class PasswordController extends Controller
             $index = $i % $charactersLength;
             $password .= $set_characters[$index][random_int(0, strlen($set_characters[$index]) - 1)];
         }
-        return $password;
+        // shuffle the password
+        return str_shuffle($password);
     }
 }
